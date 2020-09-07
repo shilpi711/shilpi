@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  #loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0088.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+	.a{
+		background-image: linear-gradient(to right,#e31398,#422274);
+	}
+	.navbar-nav li a{
+	color: #b0a2cb!!important;
+	font-weight: bolder;
+	float: right;
+	text-align: left;
+}
+.btn:hover{
+	background-color: #789fb4;
+	margin: 10px;
+} 
+
+   @media (max-width: 724px){
+.cd {
+ 
+  padding: 20px!important;
+ }
+ .dc{
+  width: 100%!important;
+ }
+ .ef{
+  padding: 20px!important;
+}
+}
+	
+    
+
+       
+ 
+
+</style>
+<body onload="myFunction()">
+  <div id="loading"></div>
+	<div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top a bg">
+        <div class="container-fluid">
+          <a href="visit-bharat.html">
+            <img class="web-logo" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png" width="180px" height="100px" ;="">       
+          </a>
+          <a>
+            <button class="navbar-toggler" style="background: #2507ffc2" data-toggle="collapse" data-target="#a">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </a>
+          <div class="collapse navbar-collapse" id="a">
+            <ul class="navbar-nav ml-auto " style="text-align:center;">
+              <li class="nav-item">
+                <button type="button" class="btn li-color"><a href="index.html" class="nav-link">HOME</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="about.html" class="nav-link">ABOUT</a></button>
+              </li>
+               <li class="nav-item">
+                <button type="button" class="btn"><a href="varieties.html" class="nav-link">VARIETY</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="recipes.html" class="nav-link">RECIPES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="online.html" class="nav-link">ONLINE SITES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="dir.html" class="nav-link">DIRECTORY</a></button>
+              </li>
+             
+              <li class="n style=av-item">
+                <button type="button" class="btn "><a href="help.html" class="nav-link">HELP </a></button>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!----------------------------container end------------------------------------------------------------->
+
+   <div class="container" style="margin-top: 150px;">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 style="color: black; font-family: 'Open Sans', sans-serif;font-weight: bolder; font-size: 50px;"> Restaurants near you</h1>
+       <h3 style="text-align: justify;"> Looking for even more delicious choices? Explore more.</h3>
+     <h4 style="text-align: justify;">  Are you a restaurant or cafe owner? Boost your business with an attractive KindMeal profile and deals for FREE.<a href="https://www.kindmeal.my/businesses.htm"> Find out more</a> or <a href="https://www.kindmeal.my/businesses.htm">contact us now.</a></h4>
+</div><!--colmd-12- end---->
+<div class="col-md-6" style="margin-top: 20px;">
+ <input type="text" id="shopquery" name="query" class="ww_form_text" style="width: 250px;" maxlength="100" value="" placeholder="Search Shop Name">
+  
+</div><!--col end--->
+<div class="col-md-6" style="margin-top: 20px;">
+  <select id="shoplocation" name="location" class="ww_form_text" style="height: 39px; width: 200px;">
+        <option value="0">CITY</option>
+        <option value="">DELHI</option>
+<option value="">PUNBAJ</option>
+<option value="">U.P</option>
+<option value="">J&K</option>
+<option value="">UTTRAKHAND</option>
+<option value="">RAJESTHAN</option>
+<option value="">GUJRAT</option>
+<option value="">TAMILNADDU</option>
+<option value="">KERELA</option>
+<option value="">BAGAL</option>
+
+        </select>
+  
+</div><!--col end-->
+
+
+      
+    </div><!----row end----------------->
+    <div class="row">
+      <div class="col-md-6" style="margin-top: 20px;">
+       <a href="" class="btn btn-success"> Search Shops</a>
+        
+      </div><!--col end--->
+      <div class="col-md-6" style="margin-top: 20px;">
+       <a href="" class="btn btn-success" style="white-space: nowrap;"> Add shop </a>
+        
+      </div><!--col end--->
+
+      
+    </div><!----row end-->
+
+     
+   </div><!---container end--------->
+   <!---container end-------------------------->
+   <div class="container" style="margin-top: 100px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711058.692950357!2d64.4487244350266!3d20.012353286203783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1595975690427!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!--con end------------------>
+<div class="container-fluid">
+  <div class="row">
+        <marquee scrollamount="13" direction="right">
+          <img  class=" ab"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKwJ4wKK_fxyWpys_njwWKekbfKJ5or5-i2A&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img src="https://www.kailashsweets.com/blog/wp-content/uploads/2017/09/nanpurA-1500x1200.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://thumbs.dreamstime.com/z/street-fast-food-shop-where-prepare-bombay-rolls-kolkata-india-96520614.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://c8.alamy.com/comp/DEKPBN/snack-shop-delhi-chaat-calangute-north-goa-goa-india-DEKPBN.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4-8VuwePdMw_N31mUal8WvO1i-QLjQF7utw&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img  class="ab"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTH_6SXcSDtuLvCIzyGTWtUZSB7SZYQp4jBzA&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://magarticles.magzter.com/articles/97/443053/5ea678cbe0f77/Osia-Hypermarts-5050-food-to-non-food-selling-proposition-emerges-as-a-unique-model-for-organized-retail-in-India.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMcG3Wl3_2092G__4ZK6eWKsxNpKzqvki7Bg&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKbMmo29QLpWbAI7CSO9bL1Q21wO7toZcJrg&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img  class="ab"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTGPjV6iJt-vglLg5eqb3egqeIdgk8MOZw1A&usqp=CAU" height="150px" width="180">
+        </marquee>
+      </div>
+  
+</div>
+
+  <!---------------con end--------------------------------->
+  <div class="container-fluid" style="background-color: #b0a2cb; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 100%;  margin-top: 50px;">
+            <div class="row">
+              <div class="col-md-5 cd" style="margin-top: 10px; padding-right: 75px; padding: 70px; ">
+                <img class="dc" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png"  class="rounded-circle"style="width: 80%; border-radius: 50%;" >
+                <br> <br>
+                
+              </div><!--col end-->
+
+              <div class="col-md-7 ef" style="margin-top: 10px; padding-right: 75px; padding: 70px;">
+                 <b><h2 style="font-family: 'prague'; font-size: 39px;   line-height: 50px; letter-spacing: 3px; color: #fff; margin-top: 15px;"><span  style="color: #7a3995;">CONTACT</span> US</h2></b>
+                        <p  class="fe "style="font-size: 25px; line-height: 25px; color: white; text-align: justify;">You can contact us and follow us.. we are here for you.
+                        if u have new idea or any sugguestions you can contact us....</p>
+
+
+                           <div class="row">
+                      <div class="col-md-6">
+                        <span style="color: white;text-align: justify;"><strong style="color:#7a3995; font-size:20px;">Address</strong><br>
+                         BUXIPUR ROAD, GORAKPUR,U.P </span>
+                       </div><!--col6 end-->
+                       <div class="col-md-6">
+                        <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">CONTACT DETAILS </strong>
+                          <br>Mobile:<a href="7054962012" style="color: blue;"><b style="color:blue; ">+91 7054962012</b></a>
+                          <br>Email:
+                          <a href="shilpiupadh01@gmail.com" style="color: blue;"><b style="color: blue;">shilpiupadh01@gmail.com</b></a></span>
+                        
+                      </div><!--col end-->
+                    </div><!--row end-->
+
+                     <div class="row" style="margin-top: 20px; text-align: justify;">
+                        <div class="col-md-6" style="text-align: justify;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">QUERY </strong>
+                          <br>Mobile:<a href="" style=" color: blue;"><b style="color:blue; ">+91 9999796366</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">shilpikumari@gmal.com</b></a></span>
+                        </div><!--col6 emd-->
+                         
+
+                          <div class="col-md-6" style="display: block;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">Other Enquiry </strong>
+                          <br>Mobile:<a href="" style="color: blue;"><b style="color:blue; ">01141187447</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">foodw@gmail.com</b></a></span>
+
+                
+              </div><!--col--end-->  
+
+            </div><!--row end-->
+
+              
+         </div>
+         <!------------------------------------container end----------------------->
+         <div class="container-fluid" style="background-color: #0b0455">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-mobile-alt" style="color:blue; font-size: 18px;"></i>SHOW US MORE LOVE AND SUPPORT ON</p>
+            <h3>
+              <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+            </h3>
+          </div>
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-envelope" style="color:#fff307; font-size: 18px;"></i>  GET SPECIAL DETAILS IN YOUR MAIL</p>
+            <div class="form-group">
+              <p><input type="Email" name="" class="form-control" placeholder="Enter Email">
+              <!-- <button class="btn btn-info" style="background:#fff307; ">SUBMIT</button></p> -->
+              </p><p class="font-weight-light" style="color: white;font-size: 15px;">We"ll Never Share Your Email With Anyone Else</p>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+<!---------------------------con end---------------------------------->
+         
+
+
+            <div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+                    <div class="row" style="display: block; height: 100%">
+                    <div class="text-center"><p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | 
+                      <a  style="text-decoration: none; color: #fff;" href="/blog">BLOG</a>
+                      <br>COPYRIGHT © 2019 
+                      <a href="http://www.firstfiddle.in" style="color: white;text-decoration: none;" target="_blank">FOOD WORLD F&amp;B PRIVATE LIMITED</a></p>
+                    </div><!--text center end-->
+                  </div><!--row-->
+                </div><!--container-fluid-->
+
+     </div>
+   </div>
+    <script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+</script>
+ </body>
+ </html>

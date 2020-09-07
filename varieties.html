@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<style>
+   #loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0108.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+	.a{
+		background-image: linear-gradient(to right,#e31398,#422274);
+	}
+	.navbar-nav li a{
+	color: #b0a2cb!!important;
+	font-weight: bolder;
+	float: right;
+	text-align: left;
+}
+.btn:hover{
+	background-color: #789fb4;
+	margin: 10px;
+} 
+
+.borderradius {
+    max-height: 1500px;
+    border: 10px solid #43ff00;
+    border-radius: 40px;
+    padding: 1%;
+    text-align: center;
+}    
+h1{
+  font-family: 'Courgette', cursive;
+}
+  .inner{
+    overflow: hidden;
+  }
+  .inner img{
+    transition: all 1.5s ease;
+  }
+  .inner:hover img{
+    transform: scale(1.5);
+  }
+  .shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.small{
+  display: none;
+}
+.large{
+  display: block;
+}
+
+@media (max-width: 724px){
+.ab {
+  font-size:   40px!important;
+}
+.small{
+  display: block;
+}
+.large{
+  display: none;
+}
+.mq{
+  font-size: 20px!important;
+}
+}
+@media (max-width: 724px){
+.ab {
+    height: 80px!important;
+}}
+   @media (max-width: 724px){
+.cd {
+ 
+  padding: 20px!important;
+ }
+ .dc{
+  width: 100%!important;
+ }
+ .ef{
+  padding: 20px!important;
+
+ }
+ }
+</style>
+</style>
+</style>     
+ 
+
+</style>
+<body  onload="myFunction()">
+  <div id="loading"></div>
+	<div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top a bg">
+        <div class="container-fluid">
+          <a href="visit-bharat.html">
+            <img class="web-logo" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png" width="180px" height="100px" ;="">       
+          </a>
+          <a>
+            <button class="navbar-toggler" style="background: #2507ffc2" data-toggle="collapse" data-target="#a">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </a>
+          <div class="collapse navbar-collapse" id="a">
+            <ul class="navbar-nav ml-auto " style="text-align:center;">
+              <li class="nav-item">
+                <button type="button" class="btn li-color"><a href="index.html" class="nav-link">HOME</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="about.html" class="nav-link">ABOUT</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn"><a href="varieties.html" class="nav-link">VARIETY</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="recipes.html" class="nav-link">RECIPES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="online.html" class="nav-link">ONLINE</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="dir.html" class="nav-link">DIRECTORY</a></button>
+              </li>
+              <li class="n style=av-item">
+                <button type="button" class="btn "><a href="help.html" class="nav-link">HELP </a></button>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </nav>
+    </div>
+<!----------------------------container end------------------------------------------------------------->
+<div class="container-fluid">
+   <div class="col-md-12">
+    <img src="https://previews.123rf.com/images/mackoflower/mackoflower1507/mackoflower150700328/42588865-variety-of-popular-chicken-dishes-in-food-collage-imagery.jpg" style="width: 100%; height: 600px;">
+    </div>
+    <br>
+    <div class="borderradius">
+    <p class="text-center ab" style="font-size: 70px; color: #db4343;">VARIETIES</p>
+    </div>
+    <!-----section end--------------------------------------------------->
+    <div class="card shadow">
+      <center>
+        <br>
+      <div class="row" style="padding: 2%">
+        <div class="col-md-10">
+          <p >
+            <input type="search" name="" class="form-control" placeholder="SEARCH ANY VARIETY">
+          </p>
+        </div>
+        <div class="col-md-2">
+        <p><i class="fas fa-search-location" style="color:#fff307; font-size: 40px;"></i></p>
+        </div>
+      </div>
+      <!-----------section end---------------------------------------------->
+      <div class="container large">
+
+      <div class="row" style="padding: 2%">
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://cdn.vox-cdn.com/thumbor/aNM9cSJCkTc4-RK1avHURrKBOjU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20059022/shutterstock_1435374326.jpg" width="180px" height="180px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <br class="l1">
+          <h1 class="text-center" style="font-size: 30px; ">INDIAN <b style="color:red;">FOOD </b></h1><br>
+          
+          <p >Indian food is different from rest of the world not only in taste but also in cooking methods. It reflects a perfect blend of various cultures and ages. Just like Indian culture, food in India has also been influenced by various civilizations, which have contributed their share in its overall development and the present form.</p>
+        </div>
+      </div>
+      <div class="row" style="padding: 2%">
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">CHINESE <b style="color:red;">FOOD</b></h1><br>
+          <p>Chinese cuisine emphasizes the integrity of color, fragrance and taste in its food. Chinese chefs try to make dishes beautiful by coordinating their colors. Some dishes are plain while others can be very bright. A table of Chinese food looks very colorful and attractive.
+
+</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBiHeoY3C5r1px2nDKDwQYS2OXGO6PX3ftpA&usqp=CAU" width="180px" height="200px;">
+          </div>
+        </div>
+      </div>
+   
+
+        <div class="row" style="padding: 2%;">
+           <div class="col-md-4">
+
+      <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbNCiMOmgYNuSiZTRS2rs-M9d0cl-8auINDQ&usqp=CAU" width="180px" height="180px;">
+          </div>     
+        </div>
+        <div class="col-md-8">
+          <br> <h1 class="text-center" style="font-size: 30px;">INTALIAN <b style="color:red;">FOOD</b></h1><br>
+          <p>“Italian food is bold and satisfying without being heavy. It’s rich and textural and uses a whole palette of flavors,” says Michael Chiarello, the chef and owner of Bottega in California’s Napa Valley and author of cookbook Bottega. “Enjoying Italian cuisine is more experiential, not intellectual. It comes from a more emotional place that’s very evocative.”</p>
+        </div>
+          
+        </div>
+
+
+         <div class="row" style="padding: 2%;"> 
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">SPANISH <b style="color:red;">FOOD</b></h1><br>
+         <p>Many ingredients are commonly used. Ham, chicken, eggs, fruits and vegetables, legumes, nuts, lamb, pork, and more are often used in Spanish cooking. Several cooking methods are used as well, including stewing, roasting, broiling, grilling, and baking.In other words, there's a lot of variety to be found in Spanish cooking. The traditional recipes are full of the flavour of the region. You're sure to love it, but you can always mix in some of your favourite meals from the UK when you want to.</p>
+        </div>
+       <div class="col-md-4">
+      <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlSA9q9Wzd4iZDjqF1ezgkiF_wwa0e8csGAQ&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+      </div>
+
+      
+        
+        
+        <div class="row" style="padding: 2%;">
+       
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9g6OnnEYnkRWiweldC5VnomlgLo_rFf6uNA&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+         <div class="col-md-8 ">
+          <h1 class="text-center" style="font-size: 30px;"> RUSSIAN <b style="color:red;">FOOD </b></h1><br>
+          <p>The basic vegetables of the famous Russian cuisine are the cucumbers, the potatoes, the cabbage, the turnips and the rutabagas. Unlike in French, American or East cuisine, Russians prepare and eat vegetables separately. The vast forests offer all kinds of fruits.A Russian proverb says that a house is made ​​of pies, not of walls to emphasize the importance of the desert. The Russian cuisine excels in flour products as blinis that are thin pancakes, made from pastry, which was thought in the pre-Christian times that are the symbol of the sun, because of their round shape.</p>
+        </div>
+      </div>
+         
+        <div class="row" style="padding: 2%;">
+        
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">FRENCH <b style="color:red;">FOOD </b></h1><br>
+          <br class="l1">
+         <p>The twentieth century brought about dramatic changes in French cuisine as well. Traditional haute cuisine (grande cuisine) is the world-renowned food made famous for its elaborate preparation and precise presentation. It was the model of French food preparation until food critics challenged it for being too inflexible.In the mid-fifteenth century, Catherine de Medici of Italy moved to France to marry the future King Henri II, bringing with her Florentine-educated cooks and a sense of creative drama and manners. In the coming years, French cuisine turned into a magical art of beautiful presentation and innovative flavors</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIg0OUp9y3QKfNqc7spAtSLUw3WiAqpFLy0w&usqp=CAU" width="180px" height="180px;">
+          </div>
+      </div>
+    </div>
+
+         <div class="row" style="padding: 2%;">
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/thai-food-river-prawn-spicy-soup-on-wooden-table-royalty-free-image-1568926151.jpg?crop=0.668xw:1.00xh;0.0240xw,0&resize=640:*" width="180px" height="180px;">
+          </div>
+         
+        </div>
+        <div class="col-md-8">
+           <h1 class="text-center" style="font-size: 30px;"> THAI <b style="color:red;">FOOD </b></h1><br>
+          <p>The main characteristic of Thai food is that each meal should comprise of four fundamental taste areas: spicy, sweet, sour and salty. The spice comes from chillies, the sweetness from cane or palm sugar.Thai cooking places emphasis on lightly prepared dishes with strong aromatic components and a spicy edge. Thai chef McDang characterises Thai food as demonstrating "intricacy; attention to detail; texture; color; taste; and the use of ingredients with medicinal benefits, as well as good flavor", as well as care being given to the food's appearance, smell and context.[1] Australian chef David Thompson, an expert on Thai food, observes that unlike many other cuisines.</p>
+          
+        </div>
+      </div>
+         <div class="row" style="padding: 2%">
+
+        
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">JAPANIS <b style="color:red;">FOOD </b></h1><br>
+          <br>
+         <p>Japanese food is one of a kind. You will never mistake it. Sushi, sashimi, unagi, and sake… we all know this. But this cuisine is not only about products and recipes, here a lot is about their indigenous culture and traditions. It is not surprising then that they made the whole world eat with chopsticks instead of knives and forks.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS43CVPo1S6-OMskMNTcRBbnxV5Z2xaZIkZUQ&usqp=CAU" width="180px" height="180px;">
+          </div>
+      </div>
+    </div>
+      <div class="row" style="padding: 2%">
+        
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9g6OnnEYnkRWiweldC5VnomlgLo_rFf6uNA&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;"> UKRAINE <b style="color:red;">FOOD </b></h1><br>
+          <p>It’s all about extremely fat and therefore enormously tasty foods. Various pastries, soups, meat dishes and unexpected mixture of tastes – you may find all these in Ukrainian cuisine.
+
+The famous Russian beetroot soup, borsch, actually comes from Ukrainian cuisine. Ukrainian borsch is a little bit different than the Russian one, but you will hardly notice. Anyways – it rocks.</p>
+        </div>
+      </div>
+        <div class="row" style="padding: 2%">
+
+        
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">MAXICAN <b style="color:red;">FOOD </b></h1><br>
+          <br class="l1">
+         <p>In the 15th century, Spanish settlers introduced new culinary techniques to Mexico, along with new ingredients like wheat, onions, rice, cheese, chicken, pork, and beef. ... A staple at most Mexican meals and a key ingredient in many traditional dishes, tortillas are round flatbreads made of corn or wheat flour.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM05GyY8AnHjynWWM1u6XF3scDkQv0A-D23A&usqp=CAU" width="180px" height="180px;">
+          </div>
+        
+      </div>
+    </div>
+      <center><a href="https://www.health.harvard.edu/diseases-and-conditions/glycemic-index-and-glycemic-load-for-100-foods">
+     <button type="submit" data-toggle="modal" data-target="#af" class="btn d" style=" background: green;border-color: #000000;border-radius: 10px; width: 190px;height: 50px; font-size: 20px;">FIND MORE</button><br><br></a></center>
+    
+      </div>
+    
+
+<!---------------------------con end--------------------------------------->
+ <div class="container small">
+
+      <div class="row" style="padding: 2%">
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://cdn.vox-cdn.com/thumbor/aNM9cSJCkTc4-RK1avHURrKBOjU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20059022/shutterstock_1435374326.jpg" width="180px" height="180px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <br class="l1">
+          <h1 class="text-center" style="font-size: 30px; ">INDIAN <b style="color:red;">FOOD </b></h1><br>
+          
+          <p >Indian food is different from rest of the world not only in taste but also in cooking methods. It reflects a perfect blend of various cultures and ages. Just like Indian culture, food in India has also been influenced by various civilizations, which have contributed their share in its overall development and the present form.</p>
+        </div>
+      </div>
+      <div class="row" style="padding: 2%">
+        
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBiHeoY3C5r1px2nDKDwQYS2OXGO6PX3ftpA&usqp=CAU" width="180px" height="200px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">CHINESE <b style="color:red;">FOOD</b></h1><br>
+          <p>Chinese cuisine emphasizes the integrity of color, fragrance and taste in its food. Chinese chefs try to make dishes beautiful by coordinating their colors. Some dishes are plain while others can be very bright. A table of Chinese food looks very colorful and attractive.
+
+</p>
+        </div>
+      </div>
+   
+
+        <div class="row" style="padding: 2%;">
+           <div class="col-md-4">
+
+      <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSbNCiMOmgYNuSiZTRS2rs-M9d0cl-8auINDQ&usqp=CAU" width="180px" height="180px;">
+          </div>     
+        </div>
+        <div class="col-md-8">
+          <br> <h1 class="text-center" style="font-size: 30px;">INTALIAN <b style="color:red;">FOOD</b></h1><br>
+          <p>“Italian food is bold and satisfying without being heavy. It’s rich and textural and uses a whole palette of flavors,” says Michael Chiarello, the chef and owner of Bottega in California’s Napa Valley and author of cookbook Bottega. “Enjoying Italian cuisine is more experiential, not intellectual. It comes from a more emotional place that’s very evocative.”</p>
+        </div>
+          
+        </div>
+
+
+         <div class="row" style="padding: 2%;"> 
+        
+       <div class="col-md-4">
+      <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTlSA9q9Wzd4iZDjqF1ezgkiF_wwa0e8csGAQ&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">SPANISH <b style="color:red;">FOOD</b></h1><br>
+         <p>Many ingredients are commonly used. Ham, chicken, eggs, fruits and vegetables, legumes, nuts, lamb, pork, and more are often used in Spanish cooking. Several cooking methods are used as well, including stewing, roasting, broiling, grilling, and baking.In other words, there's a lot of variety to be found in Spanish cooking. The traditional recipes are full of the flavour of the region. You're sure to love it, but you can always mix in some of your favourite meals from the UK when you want to.</p>
+        </div>
+      </div>
+
+      
+        
+        
+        <div class="row" style="padding: 2%;">
+       
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9g6OnnEYnkRWiweldC5VnomlgLo_rFf6uNA&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+         <div class="col-md-8 ">
+          <h1 class="text-center" style="font-size: 30px;"> RUSSIAN <b style="color:red;">FOOD </b></h1><br>
+          <p>The basic vegetables of the famous Russian cuisine are the cucumbers, the potatoes, the cabbage, the turnips and the rutabagas. Unlike in French, American or East cuisine, Russians prepare and eat vegetables separately. The vast forests offer all kinds of fruits.A Russian proverb says that a house is made ​​of pies, not of walls to emphasize the importance of the desert. The Russian cuisine excels in flour products as blinis that are thin pancakes, made from pastry, which was thought in the pre-Christian times that are the symbol of the sun, because of their round shape.</p>
+        </div>
+      </div>
+         
+        <div class="row" style="padding: 2%;">
+        
+        
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIg0OUp9y3QKfNqc7spAtSLUw3WiAqpFLy0w&usqp=CAU" width="180px" height="180px;">
+          </div>
+      </div>
+      <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">FRENCH <b style="color:red;">FOOD </b></h1><br>
+          <br class="l1">
+         <p>The twentieth century brought about dramatic changes in French cuisine as well. Traditional haute cuisine (grande cuisine) is the world-renowned food made famous for its elaborate preparation and precise presentation. It was the model of French food preparation until food critics challenged it for being too inflexible.In the mid-fifteenth century, Catherine de Medici of Italy moved to France to marry the future King Henri II, bringing with her Florentine-educated cooks and a sense of creative drama and manners. In the coming years, French cuisine turned into a magical art of beautiful presentation and innovative flavors</p>
+        </div>
+    </div>
+
+         <div class="row" style="padding: 2%;">
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/thai-food-river-prawn-spicy-soup-on-wooden-table-royalty-free-image-1568926151.jpg?crop=0.668xw:1.00xh;0.0240xw,0&resize=640:*" width="180px" height="180px;">
+          </div>
+         
+        </div>
+        <div class="col-md-8">
+           <h1 class="text-center" style="font-size: 30px;"> THAI <b style="color:red;">FOOD </b></h1><br>
+          <p>The main characteristic of Thai food is that each meal should comprise of four fundamental taste areas: spicy, sweet, sour and salty. The spice comes from chillies, the sweetness from cane or palm sugar.Thai cooking places emphasis on lightly prepared dishes with strong aromatic components and a spicy edge. Thai chef McDang characterises Thai food as demonstrating "intricacy; attention to detail; texture; color; taste; and the use of ingredients with medicinal benefits, as well as good flavor", as well as care being given to the food's appearance, smell and context.[1] Australian chef David Thompson, an expert on Thai food, observes that unlike many other cuisines.</p>
+          
+        </div>
+      </div>
+      <div class="row" style="padding: 2%">
+
+        
+        
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS43CVPo1S6-OMskMNTcRBbnxV5Z2xaZIkZUQ&usqp=CAU" width="180px" height="180px;">
+          </div>
+      </div>
+      <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">JAPANIS <b style="color:red;">FOOD </b></h1><br>
+          <br>
+         <p>Japanese food is one of a kind. You will never mistake it. Sushi, sashimi, unagi, and sake… we all know this. But this cuisine is not only about products and recipes, here a lot is about their indigenous culture and traditions. It is not surprising then that they made the whole world eat with chopsticks instead of knives and forks.</p>
+        </div>
+    </div>
+      <div class="row" style="padding: 2%">
+        
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9g6OnnEYnkRWiweldC5VnomlgLo_rFf6uNA&usqp=CAU" width="180px" height="180px;">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;"> UKRAINE <b style="color:red;">FOOD </b></h1><br>
+          <p>It’s all about extremely fat and therefore enormously tasty foods. Various pastries, soups, meat dishes and unexpected mixture of tastes – you may find all these in Ukrainian cuisine.
+
+The famous Russian beetroot soup, borsch, actually comes from Ukrainian cuisine. Ukrainian borsch is a little bit different than the Russian one, but you will hardly notice. Anyways – it rocks.</p>
+        </div>
+      </div>
+        <div class="row" style="padding: 2%">
+
+       
+        <div class="col-md-4">
+          <div class="card shadow inner">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRM05GyY8AnHjynWWM1u6XF3scDkQv0A-D23A&usqp=CAU" width="180px" height="180px;">
+          </div>
+        
+      </div>
+
+        <div class="col-md-8">
+          <h1 class="text-center" style="font-size: 30px;">MAXICAN <b style="color:red;">FOOD </b></h1><br>
+          <br class="l1">
+         <p>In the 15th century, Spanish settlers introduced new culinary techniques to Mexico, along with new ingredients like wheat, onions, rice, cheese, chicken, pork, and beef. ... A staple at most Mexican meals and a key ingredient in many traditional dishes, tortillas are round flatbreads made of corn or wheat flour.</p>
+        </div>
+    </div>
+      <center><a href="https://www.health.harvard.edu/diseases-and-conditions/glycemic-index-and-glycemic-load-for-100-foods">
+     <button type="submit" data-toggle="modal" data-target="#af" class="btn d" style=" background: green;border-color: #000000;border-radius: 10px; width: 190px;height: 50px; font-size: 20px;">FIND MORE</button><br><br></a></center>
+    
+      </div>
+    
+
+
+<!------------small end------------------------------------------>
+
+   <div class="row" style="background: #894b81;">
+        <marquee scrollamount="13" direction="right">
+          <p  class="mq" style="color: #fff307;font-size: 28px">EAT MORE AND MORE&nbsp;&nbsp;&nbsp; 
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp;
+          EAT MORE AND MORE&nbsp;&nbsp;&nbsp; 
+   </p></marquee>
+      </div>
+    </center>
+  </div>
+</div>
+      <!------------------------------------------end-------------------------------->
+       <div class="container-fluid " style="background-color: #b0a2cb; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 100%;  margin-top: 50px;">
+            <div class="row">
+              <div class="col-md-5 cd" style="margin-top: 10px; padding-right: 75px; padding: 70px; ">
+                <img  class="dc" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png"  class="rounded-circle"style="width: 80%; border-radius: 50%;" >
+                <br> <br>
+                
+              </div><!--col end-->
+
+              <div class="col-md-7 ef" style="margin-top: 10px; padding-right: 75px; padding: 70px;">
+                 <b><h2 style="font-family: 'prague'; font-size: 39px;   line-height: 50px; letter-spacing: 3px; color: #fff; margin-top: 15px;"><span  style="color: #7a3995;">CONTACT</span> US</h2></b>
+                        <p style="font-size: 25px; line-height: 20px; color: white; text-align: justify;">You can contact us and follow us.. we are here for you.
+                        if u have new idea or any sugguestions you can contact us....</p>
+
+
+                           <div class="row">
+                      <div class="col-md-6">
+                        <span style="color: white;text-align: justify;"><strong style="color:#7a3995; font-size:20px;">Address</strong><br>
+                         BUXIPUR ROAD, GORAKPUR,U.P </span>
+                       </div><!--col6 end-->
+                       <div class="col-md-6">
+                        <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">CONTACT DETAILS </strong>
+                          <br>Mobile:<a href="7054962012" style="color: blue;"><b style="color:blue; ">+91 7054962012</b></a>
+                          <br>Email:
+                          <a href="shilpiupadh01@gmail.com" style="color: blue;"><b style="color: blue;">shilpiupadh01@gmail.com</b></a></span>
+                        
+                      </div><!--col end-->
+                    </div><!--row end-->
+
+                     <div class="row" style="margin-top: 20px; text-align: justify;">
+                        <div class="col-md-6" style="text-align: justify;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">QUERY </strong>
+                          <br>Mobile:<a href="" style=" color: blue;"><b style="color:blue; ">+91 9999796366</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">shilpikumari@gmal.com</b></a></span>
+                        </div><!--col6 emd-->
+                         
+
+                          <div class="col-md-6" style="display: block;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">Other Enquiry </strong>
+                          <br>Mobile:<a href="" style="color: blue;"><b style="color:blue; ">01141187447</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">foodw@gmail.com</b></a></span>
+
+                
+              </div><!--col--end-->  
+
+            </div><!--row end-->
+
+              
+         </div>
+         <!------------------------------------container end----------------------->
+         <div class="container-fluid" style="background-color: #0b0455">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-mobile-alt" style="color:blue; font-size: 18px;"></i>SHOW US MORE LOVE AND SUPPORT ON</p>
+            <h3>
+              <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+            </h3>
+          </div>
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-envelope" style="color:#fff307; font-size: 18px;"></i>  GET SPECIAL DETAILS IN YOUR MAIL</p>
+            <div class="form-group">
+              <p><input type="Email" name="" class="form-control" placeholder="Enter Email">
+              <!-- <button class="btn btn-info" style="background:#fff307; ">SUBMIT</button></p> -->
+              </p><p class="font-weight-light" style="color: white;font-size: 15px;">We"ll Never Share Your Email With Anyone Else</p>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+<!---------------------------con end---------------------------------->
+         
+
+
+            <div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+                    <div class="row" style="display: block; height: 100%">
+                    <div class="text-center"><p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | 
+                      <a  style="text-decoration: none; color: #fff;" href="/blog">BLOG</a>
+                      <br>COPYRIGHT © 2019 
+                      <a href="http://www.firstfiddle.in" style="color: white;text-decoration: none;" target="_blank">FOOD WORLD F&amp;B PRIVATE LIMITED</a></p>
+                    </div><!--text center end-->
+                  </div><!--row-->
+                 
+                </div><!--container-fluid-->
+              </div>
+            </div>
+             <script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+</script>
+
+          </body>
+          </html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+  #loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0390.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+	.a{
+		background-image: linear-gradient(to right,#e31398,#422274);
+	}
+	.navbar-nav li a{
+	color: #b0a2cb!!important;
+	font-weight: bolder;
+	float: right;
+	text-align: left;
+}
+.btn:hover{
+	background-color: #789fb4;
+	margin: 10px;
+} 
+#mybutton {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 9;
+}
+.feedback {
+    background-color: pink;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border-color: #fbaa29;
+}
+ @media (max-width: 724px){
+.cd {
+ 
+  padding: 20px!important;
+ }
+ .dc{
+  width: 100%!important;
+ }
+ .ef{
+  padding: 20px!important;
+}
+}
+       
+ 
+
+</style>
+<body onload="myFunction()">
+  <div id="loading"></div>
+	<div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top a bg">
+        <div class="container-fluid">
+          <a href="visit-bharat.html">
+            <img class="web-logo" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png" width="180px" height="100px" ;="">       
+          </a>
+          <a>
+            <button class="navbar-toggler" style="background: #2507ffc2" data-toggle="collapse" data-target="#a">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </a>
+          <div class="collapse navbar-collapse" id="a">
+            <ul class="navbar-nav ml-auto " style="text-align:center;">
+              <li class="nav-item">
+                <button type="button" class="btn li-color"><a href="index.html" class="nav-link">HOME</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="about.html" class="nav-link">ABOUT</a></button>
+              </li>
+               <li class="nav-item">
+                <button type="button" class="btn"><a href="varieties.html" class="nav-link">VARIETY</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="recipes.html" class="nav-link">RECIPES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="online.html" class="nav-link">ONLINE SITES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="dir.html" class="nav-link">DIRECTORY</a></button>
+              </li>
+              <li class="n style=av-item">
+                <button type="button" class="btn "><a href="help.html" class="nav-link">HELP </a></button>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+<!----------------------------container end------------------------------------------------------------->
+<div class="container faq-question" style="margin-top: 150px;">
+	<h1 style="color: red;">FAQ's: Frequently Asked Questions:-</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <button class="accordion" style="font-family: 'Montserrat',sans-serif; background-color: #c25dd1;">
+        <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%;">Can you tell us about FOOD WORLD?</button>
+        <div class="panel">
+  <p class="answers">It is a website let you know about food details.which kind of food you should eat or not,some recipes,and many other information...
+  </p>
+</div>
+<button class="accordion" style="font-family: 'Montserrat',sans-serif;background-color: #c25dd1; ">
+  <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%;">What will be my benift throught this website?</button>
+  <div class="panel">
+    <p class="answers">If you are a good cook you can post your recipies there and if you are not you can lear from here...</p>
+  </div>
+  <button class="accordion" style="font-family: 'Montserrat',sans-serif;background-color: #c25dd1">
+    <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%;">What kind of information you provid?</button>
+    <div class="panel">
+      <p class="answers">WE proved a full package of information about food.there are all in one.</p>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <button class="accordion" style="font-family: 'Montserrat',sans-serif;background-color: #c25dd1">
+      <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%">There is something related to kitchen?</button>
+  <div class="panel">
+    <p class="answers">Yeah, you can find there online websites to buy something for your kitchen.</p>
+ 
+  </div>
+  <button class="accordion" style="font-family: 'Montserrat',sans-serif;background-color: #c25dd1">
+    <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%;">Will you help us in training our managers and employees?</button>
+    <div class="panel"><p class="answers">NO....</p>
+    </div>
+    <button class="accordion" style="font-family: 'Montserrat',sans-serif;background-color: #c25dd1">
+      <img alt="check" class="check" src="https://www.firstfiddle.in/assets/images/check.png" width="10%'">IS the website is safe?</button>
+      <div class="panel">
+        <p class="answers">Surely, we take full responsibility for your surecity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-------------con end---------------------------------------------------------------->
+
+<div class="container">
+      <br>
+     <div class="borderradius">
+    <h1 class="text-center heading">INFORMATION <b style="color:red;">FOOD WORLD</b></h1>
+    </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+        <br> 
+          <h4 class="text-justify d">SEND US MESSAGE</h4>
+          <br>
+          <div class="form-group  ">
+            <input type="text" name="" class="form-control" placeholder="Name">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="Email" name="" class="form-control" placeholder="Email">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="digit" name="" class="form-control" placeholder="Phone">
+          </div>
+          <br>
+          <div class="form-group">
+            <textarea type="text" name="" class="form-control" placeholder="Message">            </textarea>
+            <p class="font-weight-light">Message</p>
+          </div>
+          <button type="button" class="btn btn-warning c">Submit</button>
+        </div>
+        <br>
+        <div class="col-md-6">
+          <br>
+        <h4 class="text-justify d">CONTACT INFO</h4>
+        <br>
+        <h6 class="" style="color:#007bff; ">Office Address</h6>
+            <p class="">RJIT, Gwalior, INDIA</p>
+            <hr>
+            <h6 class="" style="color:#007bff; ">Company Address</h6>
+            <p class="">B6/22, 1st Floor, Safdarjung Enclave, New Delhi 110029, INDIA</p>
+            <hr>
+            <h6 class="" style="color:#007bff; ">Mobile</h6>
+            <p class="">9746732893</p>
+            <hr>
+            <h6 class="" style="color:#007bff; ">Watsp No</h6>
+            <p class="">7054962012</p>
+            <hr>
+            <h6 class="" style="color:#007bff; ">Email Address</h6>
+            <p class="">shilpiupadh01@gmail.com</p>
+            <hr>
+            <center>
+              <h3 style="background-color:#07a6f02b">
+                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+              </h3>
+            </center>
+        <br>
+      </div>
+    </div>
+</div>
+
+
+<div id="mybutton">
+  <a href="/franchise#inquiry">
+    <button class="feedback">LET'S CONNECT</button></a>
+  </div>
+
+  
+<!----con end------------------------------------------------>
+<div class="container-fluid" style="background-color: #b0a2cb; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 100%;  margin-top: 50px;">
+            <div class="row">
+              <div class="col-md-5 cd" style="margin-top: 10px; padding-right: 75px; padding: 70px; ">
+                <img class="dc" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png"  class="rounded-circle"style="width: 80%; border-radius: 50%;" >
+                <br> <br>
+                
+              </div><!--col end-->
+
+              <div class="col-md-7 ef" style="margin-top: 10px; padding-right: 75px; padding: 70px;">
+                 <b><h2 style="font-family: 'prague'; font-size: 39px;   line-height: 50px; letter-spacing: 3px; color: #fff; margin-top: 15px;"><span  style="color: #7a3995;">CONTACT</span> US</h2></b>
+                        <p  class="fe "style="font-size: 25px; line-height: 25px; color: white; text-align: justify;">You can contact us and follow us.. we are here for you.
+                        if u have new idea or any sugguestions you can contact us....</p>
+
+
+                           <div class="row">
+                      <div class="col-md-6">
+                        <span style="color: white;text-align: justify;"><strong style="color:#7a3995; font-size:20px;">Address</strong><br>
+                         BUXIPUR ROAD, GORAKPUR,U.P </span>
+                       </div><!--col6 end-->
+                       <div class="col-md-6">
+                        <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">CONTACT DETAILS </strong>
+                          <br>Mobile:<a href="7054962012" style="color: blue;"><b style="color:blue; ">+91 7054962012</b></a>
+                          <br>Email:
+                          <a href="shilpiupadh01@gmail.com" style="color: blue;"><b style="color: blue;">shilpiupadh01@gmail.com</b></a></span>
+                        
+                      </div><!--col end-->
+                    </div><!--row end-->
+
+                     <div class="row" style="margin-top: 20px; text-align: justify;">
+                        <div class="col-md-6" style="text-align: justify;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">QUERY </strong>
+                          <br>Mobile:<a href="" style=" color: blue;"><b style="color:blue; ">+91 9999796366</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">shilpikumari@gmal.com</b></a></span>
+                        </div><!--col6 emd-->
+                         
+
+                          <div class="col-md-6" style="display: block;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">Other Enquiry </strong>
+                          <br>Mobile:<a href="" style="color: blue;"><b style="color:blue; ">01141187447</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">foodw@gmail.com</b></a></span>
+
+                
+              </div><!--col--end-->  
+
+            </div><!--row end-->
+
+              
+         </div>
+
+
+
+         <!------------------------------------container end----------------------->
+         <div class="container-fluid" style="background-color: #0b0455">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-mobile-alt" style="color:blue; font-size: 18px;"></i>SHOW US MORE LOVE AND SUPPORT ON</p>
+            <h3>
+              <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+            </h3>
+          </div>
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-envelope" style="color:#fff307; font-size: 18px;"></i>  GET SPECIAL DETAILS IN YOUR MAIL</p>
+            <div class="form-group">
+              <p><input type="Email" name="" class="form-control" placeholder="Enter Email">
+              <!-- <button class="btn btn-info" style="background:#fff307; ">SUBMIT</button></p> -->
+              </p><p class="font-weight-light" style="color: white;font-size: 15px;">We"ll Never Share Your Email With Anyone Else</p>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+<!---------------------------con end---------------------------------->
+         
+
+
+            <div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+                    <div class="row" style="display: block; height: 100%">
+                    <div class="text-center"><p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | 
+                      <a  style="text-decoration: none; color: #fff;" href="/blog">BLOG</a>
+                      <br>COPYRIGHT © 2019 
+                      <a href="http://www.firstfiddle.in" style="color: white;text-decoration: none;" target="_blank">FOOD WORLD F&amp;B PRIVATE LIMITED</a></p>
+                    </div><!--text center end-->
+                  </div><!--row-->
+                </div><!--container-fluid-->
+
+     </div>
+      <script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+</script>
+   </div>
+
+ </body>
+ </html>

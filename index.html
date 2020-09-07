@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+<style>
+   #loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff url('https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0108.gif')
+  no-repeat center;
+  z-index: 99999;
+}
+	.a{
+		background-image: linear-gradient(to right,#e31398,#422274);
+	}
+	.navbar-nav li a
+{
+	color: #b0a2cb!!important;
+	font-weight: bolder;
+	float: right;
+	text-align: left;
+}
+.btn:hover{
+	background-color: #789fb4;
+	margin: 10px;
+} 
+h1{
+	margin: 200px;
+	font-family: 'Anton', sans-serif;
+}
+	@media(max-width: 900px){
+		h1{
+			margin: 40px;
+		}
+	} 
+  .img-title
+    { 
+      position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 110%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+      }
+
+      .title{
+        font-size: 90px;
+        font-family: prague;
+        font-weight: bold;
+    color: #22e12c;
+      } 
+
+      @media(max-width: 500px){
+      .title{
+    font-size: 50px!important;
+    font-weight: 800;
+    line-height: 1.2;
+      }
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+ .carousel{
+    width: 100%;
+    position: relative;
+}  
+   
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+@media (max-width: 724px){
+.sw {
+    height: 300px!important;
+}}
+
+ @media (max-width: 724px){
+.ab {
+    height: 80px!important;
+}}
+   @media (max-width: 724px){
+.cd {
+ 
+  padding: 20px!important;
+ }
+ .dc{
+  width: 100%!important;
+ }
+ .ef{
+  padding: 20px!important;
+}
+.hp{
+  font-size: 80px!important;
+ }
+}
+.sidebar-arrow {
+    font-size: 26px;
+    cursor: pointer;
+    line-height: normal;
+    padding-left: 15px;
+}
+.sidenav {
+    background-color: pink;
+    right: 0;
+    min-height: 18%;
+    padding: 0px 0 6px;
+    position: fixed;
+    text-align: center;
+    top: 190px;
+    transition: all 0.2s ease 0s;
+    width: 52px;
+    z-index: 1;
+    }
+   
+</style>
+
+<body  onload="myFunction()">
+  <div id="loading"></div>
+  <div class="modal fade" id="mymodel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-info lg">
+        <h5 class="modal-title" ><img src="https://www.animatedimages.org/data/media/707/animated-welcome-image-0215.gif  ">UPDATES</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3> DISCOUNT</h3>
+       <img src="https://www.animatedimages.org/data/media/298/animated-eat-and-drink-image-0400.gif">
+       <ul>
+<li><a style="color: red;" href="http://www.rjit.ac.in/regform.html" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-2179" src="http://www.gifandgif.eu/animated_gif/New/Animated%20Gif%20New%20%2826%29.gif" alt="" width="30" height="15">20% off on amzone(6th to 8th august sale)<br>
+</a></li>
+<li><a style="color:red;" href="http://www.rjit.ac.in/regform.html" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-2179" src="http://www.gifandgif.eu/animated_gif/New/Animated%20Gif%20New%20%2826%29.gif" alt="" width="30" height="15">70% off on foodpanda(rakshabhandhan sale)<br>
+
+</a></li>
+<li><a style="color: red;" href="http://www.rjit.ac.in/regform.html" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-2179" src="http://www.gifandgif.eu/animated_gif/New/Animated%20Gif%20New%20%2826%29.gif" alt="" width="30" height="15">ZOMATO FREE DELIVERY OFFER(order now)<br>
+
+</a></li>
+<li><a style="color:red;" href="http://www.rjit.ac.in/regform.html" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-2179" src="http://www.gifandgif.eu/animated_gif/New/Animated%20Gif%20New%20%2826%29.gif" alt="" width="30" height="15">BUY ONE GET ONE FREE ON KITCHEN PROUCT AT FLIPKART(BUY NOW)<br>
+
+</a></li>
+
+
+</ul>
+ 
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  
+	<div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top a bg">
+        <div class="container-fluid">
+          <a href="visit-bharat.html">
+            <img class="web-logo" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png" width="180px" height="100px" ;="">       
+          </a>
+          <a>
+            <button class="navbar-toggler" style="background: #2507ffc2" data-toggle="collapse" data-target="#a">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </a>
+          <div class="collapse navbar-collapse" id="a">
+            <ul class="navbar-nav ml-auto " style="text-align:center;">
+              <li class="nav-item">
+                <button type="button" class="btn li-color"><a href="index.html" class="nav-link">HOME</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="about.html" class="nav-link">ABOUT</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn"><a href="varieties.html" class="nav-link">VARIETY</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="recipes.html" class="nav-link">RECIPES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="online.html" class="nav-link">ONLINE SITES</a></button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn "><a href="dir.html" class="nav-link">DIRECTORY</a></button>
+              </li>
+              <li class="n style=av-item">
+                <button type="button" class="btn "><a href="help.html" class="nav-link">HELP </a></button>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </nav>
+    </div>
+<!----------------------------container end------------------------------------------------------------->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="carousel slide" data-ride="carousel" id="myslide" data-interval="2000" data-pause="false" >
+
+  <div class="carousel-inner">
+
+       <div class="carousel-item active ">
+           <img  src="https://www.liveturkey.com/wp-content/uploads/2020/04/turkeyclious.jpg" alt="First slide" class="img-fluid d-block w-100 sw" >
+         </div>
+
+              <div class="carousel-item ">
+           <img  src="https://www.helpguide.org/wp-content/uploads/table-with-grains-vegetables-fruit-768.jpg" class="img-fluid d-block w-100 sw" >
+        </div>
+
+        <div class="carousel-item ">
+           <img  src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg" alt="First slide" class="img-fluid d-block w-100 sw">
+        </div>
+
+
+  </div><!-- end  carousel-inner-->
+
+
+<ul class="carousel-indicators">
+     <li data-target="#myslide" data-slide-to="0" class="active"></li>
+     <li data-target="#myslide" data-slide-to="1" class=""></li>
+     <li data-target="#myslide" data-slide-to="2" class=""></li>
+    </ul>
+
+ <a href="#myslide" data-slide="prev" class="carousel-control-prev">
+       <span class="carousel-control-prev-icon"></span>
+    </a>
+  
+
+
+  <a href="#myslide" data-slide="next" class="carousel-control-next">
+       <span class="carousel-control-next-icon"></span>
+  </a> 
+ </div><!--	carousel slide end-->
+    
+</div><!--col end--->
+<div class="col-md-6">
+	<div class="carousel slide" data-ride="carousel" id="myslide" data-interval="2000" data-pause="false" >
+
+  <div class="carousel-inner text-center">
+
+       <div class="carousel-item active">
+          <h1 class="display-4 " style="color: pink;">GETTING BORE AT HOME..</h1>
+         </div>
+
+
+        <div class="carousel-item ">
+           <h1 class="display-4" style="color: #9696b4;">LET'S LEARN SOMETHING INTERSTING</h1>
+        </div>
+        <div class="carousel-item ">
+           <h1 class="display-4" style="color: #88c688;">MAKE SOMETHING DIFFERENT</h1>
+        </div>
+    </div>
+</div>
+          
+
+	
+</div><!--col end--->
+</div><!--row end--->
+	
+</div><!--container end--->
+<!--------modal start----------------------------------->
+<div class="" style="display: none; right: 0px; transform: rotate(180deg);">
+      <span class="sidebar-arrow lessarrow " id="sidebar-arrow"></span>
+      <a href="">
+        <i class="fas fa-reply-all" style="color:white; font-size: 30px;"></i></a>
+    </div>
+    <div id="mySidenav" class="sidenav" style="width: 52px; overflow-x: visible;position: fixed;">
+      <a href="" data-toggle="modal" data-target="#ag"><i class="fas fa-user-friends" style="color:green; font-size: 30px;"></i></a>
+      <a href="" data-toggle="modal" data-target="#ah"><i class=" fas fa-address-card" style="color:blue; font-size: 30px;"></i></a>
+      <a href="" data-toggle="modal" data-target="#aj"><i class="fas fa-comments" style="color:#fff307; font-size: 30px;"></i></a>
+      <a href="" data-toggle="modal" data-target="#ac"><i class="fas fa-map-marker-alt" style="color:red; font-size: 30px;"></i></a>
+    </div>
+    <div class="modal fade" id="ag" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#52527a;">
+            <h5 class="modal-title" style="color:blue;" id="exampleModalLabel"><i class="fas fa-user-friends" style="color:black; font-size: 20px;"></i>LOGIN FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>×</span>
+            </button>
+          </div>
+          <div class="modal-body" >
+            <div class="form-group">
+      <label>USER ID:</label>
+    <input type="email" name="email" id="em" class="form-control" placeholder="Enter Email">
+    </div>
+    <div class="form-group">
+    <label>PASSWARD:</label>
+    <input type="password" name="" id="pass "class="form-control" placeholder="Enter Password">
+     <span id="msg2" class="text-danger font-weight-bold"> </span>
+   </div>
+    <a href="" class="font-weight-light">Forgotten Passward</a>
+
+    </div>
+    <div class="form-group">
+    <input class="form-control" placeholder="Enter Code" name="6_letters_code" type="text">
+    <img src="IMAGE/captcha.jpg" style="height: 37px;">
+    <a href="" class="font-weight-light" type="button"> Refresh Code</a>
+    </div>
+    <button type="button" name="" value="submit" class="btn btn-warning btn-block">LOGIN</button>
+  
+
+            <center>
+              <h3 style="background-color:#07a6f02b">
+                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+              </h3>
+            </center>
+          </div>
+        </div>
+        </div>
+      
+    
+      <div class="modal fade" id="ah">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#52527a;">
+            <h5 class="modal-title" style="color:blue;" id="exampleModalLabel"><i class=" fas fa-address-card" style="color:black; font-size: 20px;"></i>REGISTRATION FORM</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+      <label>FULL NAME:</label>
+      <input type="text" name="" class="form-control" placeholder="Enter Your Name">
+    </div>
+    <div class="form-group">
+    <label>EMAIL ADDRESS:</label>
+    <input type="Email" name="" class="form-control" placeholder="Enter Your Email Address">
+    <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
+    </div>
+    <div class="form-group">
+    <label>MOBILE NUMBER:</label>
+    <input type="digit" name="" class="form-control" placeholder="Enter Your Mobile Number">
+    </div>
+    <div class="form-group">
+      <label>ADDRESS:</label>
+    <textarea type="text" name="" class="form-control">    </textarea>
+    </div>
+    <div class="form-group">
+      <label>Gender:</label>
+      <br>
+      <input type="radio" name="gender">Male
+      <br>
+    <input type="radio" name="gender">FeMale
+    <br>
+    <input type="radio" name="gender">Other
+    </div>
+    
+    <div class="form-group">
+      <label>DO YOU AGREE WITH TERMS &amp; CONDITIONS:</label>
+      <br>
+      <input type="radio" name="">Yes
+      <br>
+    <input type="radio" name="">No
+    <br></div>
+    <button onclick="login()" type="button" name="" value="submit" class="btn btn-danger btn-block">SUBMIT</button>
+      
+        </div>
+        <center>
+              <h3 style="background-color:#07a6f02b">
+                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+              </h3>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="aj" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#52527a;">
+            <h5 class="modal-title" style="color:blue;" id="exampleModalLabel"><i class="fas fa-map-marker-alt" style="color:black; font-size: 20px;"></i>SEND US MESSAGE</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+      <label>FULL NAME:</label>
+      <input type="text" name="" class="form-control" placeholder="Enter Your Name">
+    </div>
+    <div class="form-group">
+    <label>EMAIL ADDRESS:</label>
+    <input type="Email" name="" class="form-control" placeholder="Enter Your Email Address">
+    <p class="font-weight-light">We"ll Never Share Your Email With Anyone Else</p>
+    </div>
+    <div class="form-group">
+    <label>MOBILE NUMBER:</label>
+    <input type="digit" name="" class="form-control" placeholder="Enter Your Mobile Number">
+    </div>
+    <div class="form-group">
+            <textarea type="text" name="" class="form-control" placeholder="Message">            </textarea>
+            <p class="font-weight-light">Message</p>
+          </div>
+    <button onclick="login()" type="button" name="" value="submit" class="btn btn-warning btn-block">MESSAGE SEND</button>
+      
+        </div>
+        <center>
+              <h3 style="background-color:#07a6f02b">
+                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+              </h3>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="ac" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#52527a;">
+            <h5 class="modal-title" style="color:blue;" id="exampleModalLabel"><i class="fas fa-map-marker-alt" style="color:black; font-size: 20px;"></i>LOCATION</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span>×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.38425773541!2d78.25922881497888!3d26.020980483519747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976de6e2cd33583%3A0xcadb08fbf8b66e1f!2sRustamji%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1596140834712!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <center>
+              <h3 style="background-color:#07a6f02b">
+                <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+              </h3>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!----modal------------------------------------------------------------->
+<!------------------------------------------section end--------------------------------------------->
+<div class="container">
+  <img src="https://www.diabetes.org/sites/default/files/styles/paragraph_50_50/public/2019-08/Diabetes-Superfoods-min.jpg" width="100%" height="400px;">
+  <div class="img-title">
+  <h1 class="display-4 title" style="margin-top: 0px;">YOU GOT ALL HERE</h1>
+</div><!--img end-->
+  
+</div><!--container end--->
+<!---------------------container end---------------------------------------->
+<div class="container" style="margin-top: 100px;line-height: 40px;background-color: pink;">
+  <ul style="color:#789fb4;font-weight: bolder; ">
+   <a> <li>STATES AND THERE FOOD</li></a>
+   <a> <li>VARIEY</li></a>
+    <a><li>HYGINE</li></a>
+    <a><li>ONLINE SITES</li></a>
+   <a> <li>ALL INFORMATION RELATED TO FOOD</li></a>
+
+  </ul>
+  
+</div>
+<!----------------------------------------section end----------------------------------------->
+<div class="container-fluid" style="background-image: url(https://i.pinimg.com/736x/7c/b1/86/7cb18679659f791b1191bea97b74dfc0.jpg); opacity: 0.5;">
+  <div class="container" style="padding: 70px;">
+  <p style="color: pink; font-weight: bolder;text-align: justify;">Food is the basic human need to stay alive. Moreover, it is the need of every living organism. Therefore it is important that we should not waste food. Our world consists of different types of cultures. These cultures have varieties of dishes of food in them.Thus, all the dishes have different taste. Furthermore, our nature provides us a variety of food. From fruits to vegetables, from Dairy food to seafood everything is available.
+  </p><p style="color: yellow;text-align: justify;">We cannot deny the importance of food in our lives. As it is the basic need to survive. Yet some people waste not thinking that there are still some people that do not get any of it. We should always be careful while taking a meal on our plates.
+<p style="color: orange; text-align: justify;">
+In other words, we should take only that much that our stomach can allow. Or else there will be wasting of food. In India there are many people living in slums, they do not have proper shelter. Moreover, they are not able to have even a one-time meal. They starve for days and are always in a state of sickness.</p>
+<p style="color: white;text-align: justify;">
+Many children are there on roads who are laboring to get a daily meal. After seeing conditions like these people should not dare to waste food. Moreover, we should always provide food to the needy ones as much as we can.
+</p>
+
+
+</p>
+</div>
+  
+</div>
+<!----------------------------------section end---------------------------------------------------------->
+<div class="container-fluid">
+  <div class="row">
+        <marquee scrollamount="13" direction="right">
+          <img  class=" ab"src="https://i.ndtvimg.com/i/2015-07/sweet-625_625x350_51438261157.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/news/2015/06_2015/nanoparticles/650x350_nanoparticles.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://www.bestfoodfacts.org/wp-content/uploads/2018/02/portion-plates-1146x452-824x325.png" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://drop.ndtv.com/albums/COOKS/pasta-vegetarian/pastaveg_640x480.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://hips.hearstapps.com/del.h-cdn.co/assets/18/06/1517928338-delish-mongolian-ramen-and-meatballs-still001.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img  class="ab"src="https://www.holidify.com/images/cmsuploads/compressed/IndianStreetFood_20190103000803.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8qYyLcijTLyWBeZgao1hSJHwTe_kPPPRWTg&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://img.sunset02.com/sites/default/files/styles/1000x1000/public/image/chaatspread.jpg" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img class="ab" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTLVxZHeP12jDYyTCWQbCpE7VlXosq6kjQig&usqp=CAU" height="150px" width="180">&nbsp;&nbsp;&nbsp;
+          <img  class="ab"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSD7suMC4r88TXfvEEb5YeT1RPk2Gc-cxGnZA&usqp=CAU" height="150px" width="180">
+        </marquee>
+      </div>
+  
+</div>
+<!------------------------------container end------------------------------------------>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+   <h2  class=" hp"style="font-weight: bold; font-size: 100px; color: #cb6767; margin-top: 50px;font-family: 'Lobster', cursive;">FOOD WORLD</h2>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p style="font-size: 20px; margin-top: 20px; color: red;">Cookpad is part recipe finder, part social platform. You can search for recipes by ingredients and share what you're making. You can share recipes you invented, and if people like what you're posting, they can follow you.</p>
+      <p style="font-size: 20px; color: #268587;">Whether you are in quarantine or self-isolation due to COVID-19, you will inevitably be spending more time at home. Following general healthy living advice such as eating a balanced diet, staying hydrated, being physically active, getting enough sleep, and managing stress are the best recommendation for staying healthy during quarantine or self-isolation. If you are interested in food-related issues with COVID-19</p>
+      <p style="font-size: 20px; color: #b424b0;">Foods like fruit, nuts and certain shellfish can be eaten raw, but most of the food we eat is cooked. It can be cooked outdoors over a campfire or on a barbecue, but most food is cooked indoors in a room called a kitchen. Kitchens have their own specially-designed fixtures and electric appliances as well as many smaller items of kitchenware for preparing and cooking food and making drinks.</p>
+      <p style="font-size: 20px; color: #d79e35;">Junk Food is very harmful that is slowly eating away the health of the present generation. The term itself denotes how dangerous it is for our bodies. Most importantly, it tastes so good that people consume it on a daily basis. However, not much awareness is spread about the harmful effects of junk food.</p>
+      
+    </div>
+    
+  </div>
+</div>
+<!-----------------------------------con end------------------------------------->
+
+
+
+
+<!----------------------bar end-------------------------------------------->
+<div class="container-fluid" style="background-color: #b0a2cb; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 100%;  margin-top: 50px;">
+            <div class="row">
+              <div class="col-md-5 cd " style="margin-top: 10px; padding-right: 75px; padding: 70px; ">
+                <img class="dc" src="https://www.pinclipart.com/picdir/middle/242-2424596_food-world-logo-72-dpi-manormarket-clipart.png"  class="rounded-circle"style="width: 80%; border-radius: 50%;" >
+                <br> <br>
+                
+              </div><!--col end-->
+
+              <div class="col-md-7 ef " style="margin-top: 10px; padding-right: 75px; padding: 70px;">
+                 <b><h2 style="font-family: 'prague'; font-size: 39px;   line-height: 50px; letter-spacing: 3px; color: #fff; margin-top: 15px;"><span  style="color: #7a3995;">CONTACT</span> US</h2></b>
+                        <p style="font-size: 25px; line-height: 20px; color: white; text-align: justify;">You can contact us and follow us.. we are here for you.
+                        if u have new idea or any sugguestions you can contact us....</p>
+
+
+                           <div class="row">
+                      <div class="col-md-6">
+                        <span style="color: white;text-align: justify;"><strong style="color:#7a3995; font-size:20px;">Address</strong><br>
+                         BUXIPUR ROAD, GORAKPUR,U.P </span>
+                       </div><!--col6 end-->
+                       <div class="col-md-6">
+                        <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">CONTACT DETAILS </strong>
+                          <br>Mobile:<a href="7054962012" style="color: blue;"><b style="color:blue; ">+91 7054962012</b></a>
+                          <br>Email:
+                          <a href="shilpiupadh01@gmail.com" style="color: blue;"><b style="color: blue;">shilpiupadh01@gmail.com</b></a></span>
+                        
+                      </div><!--col end-->
+                    </div><!--row end-->
+
+                     <div class="row" style="margin-top: 20px; text-align: justify;">
+                        <div class="col-md-6" style="text-align: justify;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">QUERY </strong>
+                          <br>Mobile:<a href="" style=" color: blue;"><b style="color:blue; ">+91 9999796366</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">shilpikumari@gmal.com</b></a></span>
+                        </div><!--col6 emd-->
+                         
+
+                          <div class="col-md-6" style="display: block;">
+                          <span style="color: white; text-align: justify;"><strong style="color:#7a3995;font-size: 20px ">Other Enquiry </strong>
+                          <br>Mobile:<a href="" style="color: blue;"><b style="color:blue; ">01141187447</b></a>
+                          <br>Email:
+                          <a href="" style="color: blue;"><b style="color: blue;">foodw@gmail.com</b></a></span>
+
+                
+              </div><!--col--end-->  
+
+            </div><!--row end-->
+
+              
+         </div>
+         <!------------------------------------container end----------------------->
+         <div class="container-fluid" style="background-color: #0b0455">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-mobile-alt" style="color:blue; font-size: 18px;"></i>SHOW US MORE LOVE AND SUPPORT ON</p>
+            <h3>
+              <a href="https://www.linkedin.com"><i class="fab fa-whatsapp-square" style="color:#0cf241; font-size: 30px;"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x" style="color:#0b9ae1; font-size: 30px;"></i></a>
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x" style="color: #3e1afb;font-size: 30px;"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter" style="color:#1a87fb; font-size: 30px;"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x" style="color:#d7078e; font-size: 30px;"></i></a>
+            </h3>
+          </div>
+          <div class="col-md-6"><br>
+            <p style="font-size: 18px; color: red;" class="c"><i class="fas fa-envelope" style="color:#fff307; font-size: 18px;"></i>  GET SPECIAL DETAILS IN YOUR MAIL</p>
+            <div class="form-group">
+              <p><input type="Email" name="" class="form-control" placeholder="Enter Email">
+              <!-- <button class="btn btn-info" style="background:#fff307; ">SUBMIT</button></p> -->
+              </p><p class="font-weight-light" style="color: white;font-size: 15px;">We"ll Never Share Your Email With Anyone Else</p>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+<!---------------------------con end---------------------------------->
+         
+
+
+            <div class="container-fluid" style="background-color: #000; padding-top: 30px; padding-bottom: 30px;">
+                    <div class="row" style="display: block; height: 100%">
+                    <div class="text-center"><p class="copyright-text" style=" font-size:13px;color: white;margin-top: 0px;margin-bottom: 0rem;">PRIVACY POLICY | TERMS AND CONDITIONS | 
+                      <a  style="text-decoration: none; color: #fff;" href="/blog">BLOG</a>
+                      <br>COPYRIGHT © 2019 
+                      <a href="http://www.firstfiddle.in" style="color: white;text-decoration: none;" target="_blank">FOOD WORLD F&amp;B PRIVATE LIMITED</a></p>
+                    </div><!--text center end-->
+                  </div><!--row-->
+                </div><!--container-fluid-->
+
+<script type="text/javascript">
+  
+  var preloader=document.getElementById('loading');
+
+  function myFunction(){
+    preloader.style.display= 'none';
+  }
+  
+</script>
+<script>
+  $(document).ready(function(){
+    $('#mymodel').modal('show');
+
+
+
+  });
+</script>
+</body>
+</html>
